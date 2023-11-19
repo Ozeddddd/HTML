@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HTML Assignment</title>
+    <style>
+        h1 {
+            font-family:playfair Display;
+            text-align: center; font-size: 50px;
+            font-weight: 120;margin: 0%; padding-bottom: 0%
+        }
+        .header {
+            background-color: rgb(0, 0, 0); 
+        padding: 0.5px; margin-top: 2px; display: flex; justify-content: space-between;"
+        }
+        .header-list {
+            display: flex; list-style-type: none;
+                gap: 25px;justify-content: left;flex-direction: row;
+                align-content: center; color: white;
+        }
+        a, button :visited{
+            color:white; text-decoration: none;
+        }
+        .Art-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 5px; row-gap: 5px;
+        }
+        .Art-preview {
+            border-width: 2px; border-style: solid;
+            border-color: black;padding: 4px;
+        }
+
+        .Art-thumbnail {
+            width: 100%; height: 120px;
+            object-fit: cover;
+        }
+        .Art-title {
+            margin: 2px;
+        }
+        .Art-details {
+            color: rgb(86, 86, 86);
+            font-size: small; margin: 0;
+        }
+        audio {
+             margin-top: 10px; justify-content: center;
+             height: 20px
+        }
+        dt {
+            color: rgb(165, 121, 9); text-decoration: underline;
+        }
+        dd {
+            display: grid; width: 95%;
+        }
+        .foot {
+            display: flex; justify-content: center;color: white;
+            background-color: rgb(165, 121, 9); align-items: center; height: 30px;
+        }
+        .contact-options{
+            display: grid; grid-template-columns: 1fr 1fr;
+        }
+        .icons {
+            display: grid; justify-content: center; gap: 15px;
+            grid-template-columns: 15px 15px 15px 15px
+        }
+        .contact-style {
+            display: grid; justify-content: center
+        }
+        footer {
+            padding-bottom: 70px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <h1>
+            Ozed<span style="font-size: 35px;
+            vertical-align: top;">&trade;</span>
+        </h1>
+        <nav class="header">
+            <div>
+                <ul class="header-list" >
+                <li><a href="Home.html">Home</a></li>
+                <li>Services</li>
+                <li>Portfolio</li>
+                </ul>
+            </div>
+            <div style=" align-self: center;">
+                <button style="font-size:15px;  margin-right: 30px; background-color: rgb(165, 121, 9);
+                border-radius: 2px;border-style: hidden;">
+                <a style="text-decoration: none;" href="https://whistlerart.com/?campaign=18402780624&adgroup=143326393604&keyword=buy%20fine%20art&gad_source=1&gclid=EAIaIQobChMIxNDbnJvLggMVhtrtCh08NwhkEAAYBCAAEgJjVPD_BwE">Buy Art <i class="fa fa-shopping-cart"></i></a></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <p style="margin: 4px; line-height: 30px;"> <br>Drawing is such a wonderful form of artistic expression!
+             Whether it's pencil, charcoal, or even digital, drawing allows us to capture the beauty of the world around us or create imaginative worlds of our own. 
+            It's a way to communicate ideas, emotions, and stories visually.
+        </p>
+        <div class="Art-container">
+            <div class="Art-preview">
+                <div><img class="Art-thumbnail" src="../Images/PIMG.jpeg" alt="Art"></div>
+                <p class="Art-title">LOST BOY</p>
+                <p class="Art-details">A hyperrealistic art of dumebi.
+                 Acrylic and charcoal on canvas. 3ft by 4ft
+                </p>
+            </div> 
+            <div class="Art-preview">
+                <div><img class="Art-thumbnail" src="../Images/PIMG1.jpeg" alt="Art"></div>
+                <p class="Art-title">DRIP</p>
+                <p class="Art-details">An artwork of Monalisa basking in emotions.
+                 Acrylic on canvas. 30cm x 85cm
+                </p>
+            </div> 
+            <div class="Art-preview">
+                <div><img class="Art-thumbnail" src="../Images/PIMG2.jpeg" alt="Art"></div>
+                <p class="Art-title">THE STARE</p>
+                <p class="Art-details"> It is said that the eye is the window to soul. <br>
+                 5ft by 5ft
+                </p>
+            </div> 
+           <!--
+            <div class="Art-preview">
+                <div><img class="Art-thumbnail" src="../Images/PIMG3.jpeg" alt="Art"></div>
+                <p class="Art-title">TIME</p>
+                <p class="Art-details"> The difference between the future and now. <br> 60cm by 40cm
+                </p>
+            </div>
+           -->  
+        </div>
+        <audio controls src="../audio/Ozed.m4a">A welcome audio for visiting our page</audio>
+        <section>
+            <h3>
+                Art Stash
+            </h3>
+            <dl style="margin: 10px;">
+                <dt>A slave king</dt>
+                <dd>Drawing can be therapeutic too. It's a way to relax, unwind, and focus your mind. It allows you to be fully present in the moment, observing details and capturing them on paper. It's like meditation with a pencil!
+                </dd>
+                <dt>Maduka the drawing</dt>
+                <dd>There are countless techniques and styles in drawing. From realistic portraits to abstract doodles, from intricate patterns to bold, expressive lines, there's something for everyone. And the best part is that you can always learn and improve. Practice, experiment, and don't be afraid to make mistakes. Every stroke of the pencil is an opportunity to grow as an artist.
+                </dd>
+                <dt>Unpuzzled</dt>
+                <dd>Drawing also offers a sense of accomplishment. When you finish a piece, whether it's a quick sketch or a detailed masterpiece, you can step back and admire what you've created. And sharing your drawings with others can bring joy and inspiration to those around you.
+                </dd>
+                <dt>Peace in pieces</dt>
+                <dd>So, whether you're drawing for fun, as a hobby, or pursuing it as a professional artist, keep exploring, experimenting, and enjoying the process. Let your imagination run wild and let your pencil bring your visions to life. Happy drawing! 🎨✏️</dd>
+            </dl>
+           </section>
+    </main>
+    <footer>
+        <p class="foot">Thank you for visiting our website. Give us your feedback.</p>
+        <div class="contact-options">
+            <div class="icons">
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter square"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-whatsapp"></i>
+                </div>
+                <div class="contact-style">
+                    <select style="background-color: white;
+                border: none; font-size: 13px;"
+                 name="contact" id="contact">
+                    <option value="Email">Ozed@gmail.com</option>
+                    <option value="Tel no">08103586644</option>
+                </select>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>
